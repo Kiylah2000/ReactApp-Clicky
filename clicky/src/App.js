@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Card from "./components/card";
-import Wrapper from "./components/wrapper";
-import Header from "./components/header";
-import cards from "./cards.json.js";
-import "./App.css";
+import Card from "..src/Cards";
+import Wrapper from "../src/components/Wrapper";
+import Header from "../src/components/Header";
+import cards from "../src/cards.json";
+import "../src/App.css";
 
 class App extends Component {
   // Setting this.state.cards to the cards json array
