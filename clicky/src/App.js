@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import card from "../src/cards";
+import cards from "../src/cards";
 import wrapper from "./components/wrapper";
 import header from "./components/header";
-import cards from "../src/cards.json";
+import pictures from "../src/pictures.json";
 import "../src/App.css";
 
 class App extends Component {
@@ -19,8 +19,8 @@ class App extends Component {
         console.log(this.state.highscore);
       });
     }
-    this.state.cards.forEach(card => {
-      card.count = 0;
+    this.state.cards.forEach(cards => {
+      cards.count = 0;
     });
     alert(`Game Over :( \nscore: ${this.state.score}`);
     this.setState({score: 0});
@@ -48,12 +48,12 @@ class App extends Component {
     return (
       <wrapper>
         <header score={this.state.score} highscore={this.state.highscore}>Clicky Game</header>
-        {this.state.cards.map(card => (
+        {this.state.cards.map(pictures => (
           <card
             clickCount={this.clickCount}
-            id={card.id}
-            key={card.id}
-            image={card.image}
+            id={pictures.id}
+            key={pictures.id}
+            image={pictures.image}
           />
         ))}
       </wrapper>

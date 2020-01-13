@@ -1,1 +1,1 @@
-export { default } from "src/components/wrapper/wrapper.css";
+export { default } from "/Users/Ky/ReactApp-Clicky/clicky/src/components/wrapper/wrapper.css";
