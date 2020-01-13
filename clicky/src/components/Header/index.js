@@ -1,7 +1,7 @@
-import React from "react";
-import "./components/Header/header.css";
+import React from "clicky/node_modules/react";
+import "/src/components/header/header.css";
 
-const Header = props => (
+const header = props => (
   <div className="header">
     <div className="title">{props.children}</div>
     <div className="scores">
@@ -10,4 +10,4 @@ const Header = props => (
   </div>
 );
 
-export default Header;
+export default header;

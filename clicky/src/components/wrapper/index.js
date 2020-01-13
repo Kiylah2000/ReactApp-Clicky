@@ -1,1 +1,1 @@
-export { default } from "./components/Wrapper";
+export { default } from "src/components/wrapper/wrapper.css";

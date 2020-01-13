@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Card from "..src/Cards";
-import Wrapper from "../src/components/Wrapper";
-import Header from "../src/components/Header";
+import card from "../src/cards";
+import wrapper from "./components/wrapper";
+import header from "./components/header";
 import cards from "../src/cards.json";
 import "../src/App.css";
 
@@ -46,17 +46,17 @@ class App extends Component {
   // Map over this.state.cards and render a cardCard component for each card object
   render() {
     return (
-      <Wrapper>
-        <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
+      <wrapper>
+        <header score={this.state.score} highscore={this.state.highscore}>Clicky Game</header>
         {this.state.cards.map(card => (
-          <Card
+          <card
             clickCount={this.clickCount}
             id={card.id}
             key={card.id}
             image={card.image}
           />
         ))}
-      </Wrapper>
+      </wrapper>
     );
   }
 }
