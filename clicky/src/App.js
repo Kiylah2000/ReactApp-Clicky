@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import cards from "../src/cards";
 import wrapper from "./components/wrapper";
 import header from "./components/header";
-import pictures from "../src/pictures.json";
+import card from "../src/card.json";
 import "../src/App.css";
 
 class App extends Component {
